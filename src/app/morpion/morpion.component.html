@@ -1,0 +1,7 @@
+<div id="morpion">
+  <div *ngFor="let cell of tableau; let i = index" (click)="jouerCase(i)" class="case">{{ cell }}</div>
+</div>
+<div id="info">
+  <p>Joueur actuel : {{ joueurActuel }}</p>
+  <button (click)="reinitialiser()">Réinitialiser</button>
+</div>
